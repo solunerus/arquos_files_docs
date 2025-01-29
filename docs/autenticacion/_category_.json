@@ -1,6 +1,6 @@
 {
-  "label": "Autenticación en Arquos Files",
-  "position": 5,
+  "label": "Autenticación",
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "Aprenderás como funciona la autenticación en Arquos Files."

@@ -133,8 +133,8 @@ const config = {
                 to: "/blog",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/solunerus/arquos_files_docs",
+                label: "Sitio Web",
+                href: "https://www.nerus.com.mx",
               },
             ],
           },

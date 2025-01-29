@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+---
+
+# Introducción
+
+## ¿Qué es Arquos Files?
+
+Arquos Files es un sistema web avanzado para la gestión de documentos digitalizados, desarrollado con Phoenix LiveView. Esta herramienta está diseñada para facilitar la organización, el acceso y la administración de documentos en un entorno web eficiente y seguro.
+
+## ¿Cómo funciona?
+
+Arquos Files es un sistema de gestión documental que permite a los usuarios cargar, organizar y consultar documentos digitalizados de manera eficiente. El sistema cuenta con una interfaz web intuitiva y fácil de usar que facilita la gestión de documentos y la colaboración entre usuarios.
+
+El sistema está diseñado para ser escalable y seguro, lo que lo hace ideal para empresas de todos los tamaños. Arquos Files se puede personalizar para satisfacer las necesidades específicas de cada organización, lo que lo convierte en una solución flexible y versátil para la gestión de documentos.
+
+## Requisitos
+
+### Servidor
+
+#### Tecnologías utilizadas
+
+* [Elixir](https://elixir-lang.org/)
+* [Phoenix Framework](https://www.phoenixframework.org/)
+* [MS SQL Server](https://www.microsoft.com/es-es/sql-server/sql-server-downloads)
+* [Bootstrap](https://getbootstrap.com/)
+* [Node.js](https://nodejs.org/en/)
+* [NPM](https://www.npmjs.com/)
+
+#### Requisitos mínimos del servidor
+
+* Procesador de 2 núcleos a 1.8 GHz.
+* 8 GB de RAM.
+* 1 TB de almacenamiento.
+* Conexión Gigabit Ethernet (1 Gbps).
+* Si se desea una disponibilidad en todo lugar, se recomienda una conexión de internet de 100 Mbps.
+
+### Cliente
+
+#### Navegadores soportados
+
+* Google Chrome.
+* Mozilla Firefox.
+* Microsoft Edge.
+* Safari.
+* Opera.
+* Brave.
+* Vivaldi.
+
+#### Requisitos mínimos del cliente
+
+* Resolución de pantalla de 1024x768 píxeles.
+* Conexión a la red de al menos 10 Mbps.
+* Habilitar JavaScript en el navegador.
+* Habilitar cookies en el navegador.
+* Habilitar el almacenamiento local en el navegador.

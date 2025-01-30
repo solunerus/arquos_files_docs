@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Login
 
+Ingresar a Arquos Files es muy sencillo, solo es necesario proporcionar el correo electrónico y la contraseña que le haya proporcionado el administrador de ArquosCRM.
+
 ## Acceso
 
 Para poder acceder a Arquos Files, es necesario que un administrador de Arquos le haya dado de alta en el sistema ArquosCRM, para más información consulte la sección [Registro](/docs/autenticacion/registro).
@@ -15,6 +17,16 @@ Para poder acceder a Arquos Files, es necesario que un administrador de Arquos l
 </div>
 
 Para acceder a Arquos Files, es necesario ingresar el correo electrónico y la contraseña que le haya proporcionado el administrador de ArquosCRM.
+
+Una vez ingresados los datos, es necesario hacer clic en el botón `Iniciar sesión` para acceder al sistema.
+
+Al iniciar sesión, se mostrará algo como lo siguiente:
+
+<div align="center">
+  <img src="/img/arquos_files/Landing-Pages/landing-page-with-session.png" alt="Dashboard" />
+</div>
+
+En la parte Izquierda encontrabmos el `sidebar` que contiene las opciones de navegación, y en la parte derecha encontramos el contenido de la página. Así también, en la esquina superior derecha encontramos el nombre del usuario que ha iniciado sesión, y al hacer clic en el nombre del usuario se desplegará un menú con las opciones de `Configuración`, `Actividad` y `Cerrar sesión`.
 
 ### Recuperar contraseña
 

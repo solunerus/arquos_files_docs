@@ -1,49 +1,34 @@
 ---
-sidebar_position: 1
+sidebar_position: 12
 ---
 
 # Organización del menú - TODO
 
-## Introducción
+## Introducción 1
 
 - [x] Qué es Arquos Files.
 - [x] Cómo funciona.
 - [x] Requisitos.
 
-## Autenticación
+## Autenticación 2
 
 - [x] Registro.
 - [x] Login.
-- [ ] Recuperar contraseña.
+- [x] Recuperar contraseña.
 
-## Tutorial express - Carga de documento
+## Usuario 3
 
-- [ ] Expedientes.
-- [ ] Localización.
-- [ ] Carga de documento.
-- [ ] Visualización.
+- [x] Dashboard.
+- [x] Configuración de usuario.
+- [x] Opciones del menú.
+- [x] Bitácora de actividad de usuario.
 
-## Tutorial express - Creación de expediente
+## Área de consulta 4
 
-- [ ] Creación de expediente.
-- [ ] Localización.
-- [ ] Asignación de documento.
+- [ ] Bitácora del sistema.
+- [ ] Atributos de archivo.
 
-## Tutorial express - Perfiles y usuarios
-
-- [ ] Creación de perfiles.
-- [ ] Alta de usuarios en Arquos Files.
-- [ ] Asignación de usuarios a perfiles.
-- [ ] Asignación de perfil a usuarios.
-
-## Perfil de usuario
-
-- [ ] Opciones del menú.
-- [ ] Configuración de usuario.
-- [ ] Bitácora de actividad de usuario.
-- [ ] Cerrar sesión.
-
-## Área de gestión
+## Área de gestión 5
 
 - [ ] Menú.
 - [ ] Datos de empresa.
@@ -51,12 +36,7 @@ sidebar_position: 1
 - [ ] Usuarios.
 - [ ] Reportes.
 
-## Área de consulta
-
-- [ ] Bitácora del sistema.
-- [ ] Atributos de archivo.
-
-## Área de operación
+## Área de operación 6
 
 - [ ] Niveles.
 - [ ] soporte documental.
@@ -66,9 +46,30 @@ sidebar_position: 1
 - [ ] Expedientes
 - [ ] Documentos.
 
-## Genericos
+## Tutorial - Carga de documento 7
 
-- [ ] Sidebar.
-- [ ] Notificaciones
+- [ ] Expedientes.
+- [ ] Localización.
+- [ ] Carga de documento.
+- [ ] Visualización.
+
+## Tutorial - Creación de expediente 8
+
+- [ ] Creación de expediente.
+- [ ] Localización.
+- [ ] Asignación de documento.
+
+## Tutorial - Perfiles y usuarios 9
+
+- [ ] Creación de perfiles.
+- [ ] Alta de usuarios en Arquos Files.
+- [ ] Asignación de usuarios a perfiles.
+- [ ] Asignación de perfil a usuarios.
+
+## Genericos 10
+
+- [x] Sidebar.
+- [x] Notificaciones
 - [ ] Formularios
-- [ ] Opciones del menú.
+- [ ] Tablas
+- [ ] Botones

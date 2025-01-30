@@ -8,6 +8,10 @@ sidebar_position: 1
 
 Arquos Files es un sistema web avanzado para la gestión de documentos digitalizados, desarrollado con Phoenix LiveView. Esta herramienta está diseñada para facilitar la organización, el acceso y la administración de documentos en un entorno web eficiente y seguro.
 
+<div align="center">
+  <img src="/img/arquos_files/Landing-Pages/landing-page-without-session.png" alt="Landing page" />
+</div>
+
 ## ¿Cómo funciona?
 
 Arquos Files es un sistema de gestión documental que permite a los usuarios cargar, organizar y consultar documentos digitalizados de manera eficiente. El sistema cuenta con una interfaz web intuitiva y fácil de usar que facilita la gestión de documentos y la colaboración entre usuarios.

@@ -1,8 +1,8 @@
 {
-  "label": "Genéricos",
+  "label": "Elementos Genéricos",
   "position": 10,
   "link": {
     "type": "generated-index",
-    "description": "Genéricos de Arquos Files."
+    "description": "Elementos genéricos de Arquos Files."
   }
 }

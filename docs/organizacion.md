@@ -70,6 +70,6 @@ sidebar_position: 12
 
 - [x] Sidebar.
 - [x] Notificaciones
-- [ ] Formularios
-- [ ] Tablas
-- [ ] Botones
+- [x] Formularios
+- [x] Tablas
+- [x] Botones

@@ -1,0 +1,67 @@
+---
+sidebar_position: 2
+---
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
+# Estructura de archivos
+
+La vista de estructura de archivo permite al administrador gestionar los diversos departamentos y áreas de la empresa. Los departamentos y áreas son los bloques que agrupan a los expedientes y documentos de la empresa.
+
+<ImageDiv src="/img/work/opr/estructura-archivos/table-of-organigramas-innactivated.png" alt="Table Estructura de archivos" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador del organigrama
+* Descripción del organigrama
+* Clave del organigrama
+* Fecha de creación
+* Fecha de última actualización
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Actualizar organigrama.
+* Inactivar/activar.
+
+## Detalle del registro
+
+Para ver el detalle de un organigrama, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+
+<ImageDiv src="/img/work/opr/estructura-archivos/show-organigrama.png" alt="Show Organigrama" />
+
+## Búsqueda
+
+Para buscar un organigrama, se puede hacer uso del formulario de [búsqueda simple](/docs/genericos/formularios#búsqueda-simple) o [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+Así también, la estructura de archivo se agrupa en los [niveles](/docs/area-operacion/niveles), los cuales son los bloques que agrupan a los departamentos y áreas de la empresa.
+
+<ImageDiv src="/img/work/opr/estructura-archivos/select-afectable-organigrama-by-niveles.png" alt="Filter Organigrama" />
+
+## Creación
+
+Para crear una estructura de archivo, se debe posicionar en el nivel deseado, al seleccionar el nivel y departamento o área, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/estructura-archivos/form-new-organigrama.png" alt="New Organigrama" />
+
+Solo se debe ingresar la descripción y la clave de la estructura de archivo y dar clic en el botón `Guardar`. En tiempo real, se mostrará la estructura de archivo creada en la tabla de estructura de archivos.
+
+:::info Importante
+
+El registro agregado será un `hijo` del departamento o área seleccionado.
+
+:::
+
+## Actualización
+
+Para actualizar una estructura de archivo, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla de estructura de archivos, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/estructura-archivos/form-edit-organigrama.png" alt="Edit Organigrama" />
+
+Solo se debe modificar la descripción y la clave de la estructura de archivo y dar clic en el botón `Guardar`. En tiempo real, se mostrará la estructura de archivo actualizada en la tabla de estructura de archivos.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.

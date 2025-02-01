@@ -1,0 +1,56 @@
+---
+sidebar_position: 1
+---
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
+# Niveles
+
+La vista de niveles permite al administrador gestionar los niveles de crecimiento del organigrama de la empresa. Los niveles son los bloques que agrupan a los departamentos y áreas de la empresa.
+
+<ImageDiv src="/img/work/opr/niveles/table-nivel.png" alt="Table Niveles" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador del nivel
+* Descripción del nivel
+* Fecha de última actualización
+* Acciones
+
+## Detalle del registro
+
+Para ver el detalle de un nivel, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+
+<ImageDiv src="/img/work/opr/niveles/show-nivel.png" alt="Show Nivel" />
+
+## Búsqueda
+
+Para buscar un nivel, se puede hacer uso del formulario de [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación
+
+Para crear un nivel, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/niveles/form-new-nivel.png" alt="New Nivel" />
+
+Solo se debe ingresar la descripción del nivel y dar clic en el botón `Guardar`. En tiempo real, se mostrará el nivel creado en la tabla de niveles.
+
+## Actualización
+
+Para actualizar un nivel, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla de niveles, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/niveles/form-edit-nivel.png" alt="Edit Nivel" />
+
+Solo se debe modificar la descripción del nivel y dar clic en el botón `Guardar`. En tiempo real, se mostrará el nivel actualizado en la tabla de niveles.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.
+
+:::caution Importante
+
+Si un nivel está inactivo, no se podrán crear departamentos o áreas en él.
+
+:::

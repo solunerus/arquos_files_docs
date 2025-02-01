@@ -18,20 +18,20 @@ La vista para gestionar el menú se compone de dos partes principales, la primer
 
 Las opciones principales son las siguientes:
 
-* Gestión de menú `/sys/menu`.
-* Información de la empresa `/sys/empresa`.
-* Usuarios `/sys/usuarios-info`.
-* Perfiles `/sys/perfiles`.
-* Reportes `/sys/reportes`.
 * Bitácora del sistema `/qry/bitacora`.
 * Atributos de archivo `/qry/attr-archivo`.
+* Gestión de menú `/sys/menu`.
+* Información de la empresa `/sys/empresa`.
+* Perfiles `/sys/perfiles`.
+* Usuarios `/sys/usuarios-info`.
+* Reportes `/sys/reportes`.
 * Niveles `/opr/niveles`.
-* Documentos `/opr/documentos`.
-* Soporte documental `/opr/tipo-documento`.
-* Atributos de expedientes `/opr/atributos-archivo`.
-* Estructura de expedientes `/opr/tipo-archivo`.
 * Estructura de archivo `/opr/organigramas`.
+* Soporte documental `/opr/tipo-documento`.
+* Estructura de expedientes `/opr/tipo-archivo`.
+* Atributos de expedientes `/opr/atributos-archivo`.
 * Expedientes `/opr/operaciones`.
+* Documentos `/opr/documentos`.
 
 Estas opciones permiten al administrador del sistema gestionar las diferentes rutas y configuraciones de la aplicación.
 

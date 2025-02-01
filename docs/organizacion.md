@@ -25,14 +25,14 @@ sidebar_position: 12
 
 ## Área de consulta 4
 
-- [ ] Bitácora del sistema.
-- [ ] Atributos de archivo.
+- [x] Bitácora del sistema.
+- [x] Atributos de archivo.
 
 ## Área de gestión 5
 
-- [ ] Menú.
-- [ ] Datos de empresa.
-- [ ] Perfiles.
+- [x] Menú.
+- [x] Datos de empresa.
+- [x] Perfiles.
 - [ ] Usuarios.
 - [ ] Reportes.
 

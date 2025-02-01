@@ -47,20 +47,6 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/solunerus/arquos_files_docs/tree/main/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/solunerus/arquos_files_docs/tree/main/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -86,7 +72,6 @@ const config = {
             position: "left",
             label: "Docs",
           },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/solunerus/arquos_files_docs",
             label: "GitHub",
@@ -102,7 +87,7 @@ const config = {
             items: [
               {
                 label: "Tutorial",
-                to: "/docs/intro",
+                to: "/docs/introduccion",
               },
             ],
           },
@@ -126,10 +111,6 @@ const config = {
           {
             title: "Más",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "Sitio Web",
                 href: "https://www.nerus.com.mx",

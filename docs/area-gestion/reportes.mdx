@@ -1,0 +1,142 @@
+---
+sidebar_position: 5
+---
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
+# Reportes
+
+La vista de reportes permite al administrador visualizar los reportes generados en el sistema Arquos Files. Los reportes o informes son documentos que contienen información de los registros de la base de datos, estos pueden ser exportados en formato PDF.
+
+<ImageDiv src="/img/work/sys/reports/table-reports.png" alt="Reports page" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador del reporte
+* Descripción del reporte
+* Vista asociada
+* Fecha de creación
+* Fecha de actualización
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Actualizar reporte.
+* Actualizar los atributos del reporte.
+* Asignar el reporte a los usuarios.
+* Inactivar/activar.
+
+## Búsqueda
+
+Para buscar un reporte, se puede hacer uso del formulario de [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación de reporte
+
+Para crear un reporte, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-1.png" alt="Report create form" />
+
+Los campos a llenar son los siguientes:
+
+* **Descripción**. Es el nombre del reporte.
+* **Vista asociada**. Es la vista en la cual se basará el reporte (así también es la vista en la cual estará el reporte). Define los atributos que se mostrarán en el reporte.
+* **Orientación del reporte**. Es la orientación del reporte, puede ser vertical u horizontal.
+* **Tamaño de la hoja**. Es el tamaño de la hoja del reporte, puede ser carta u oficio.
+* **Título en todas las páginas**. Es un checkbox que indica, al estar marcado, si el título del reporte se mostrará en todas las páginas.
+* **Atributos**. Es el listado de las columnas que se mostrarán en el reporte.
+
+### Vista asociada
+
+Al dar clic en el selector de vista asociada, se abrirá algo similar a lo siguiente:
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-2.png" alt="Report create form - View associated" />
+
+Al seleccionar una vista, se mostrarán los atributos de la vista en el campo de atributos.
+
+### Atributos
+
+La lista de atributos son las columnas que puede tener nuestro reporte, para lograr avanzar en la creación del reporte, se debe seleccionar al menos dos atributos.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-3.png" alt="Report create form - Attributes" />
+
+#### Selección de atributos
+
+Para seleccionar un atributo, se debe hacer clic en el check del atributo deseado, al hacerlo, el icono cambiará de color gris a verde.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-4.png" alt="Report create form - Attributes selected" />
+
+#### Desplazamiento de atributos
+
+Para desplazar un atributo, se debe hacer clic en el atributo y arrastrarlo hacia arriba o hacia abajo. Esto sirve para dar orden a los atributos y personalizar el reporte según las necesidades.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-5.png" alt="Report create form - Attributes drag" />
+
+Cuando se hayan seleccionado los atributos, se debe ir hacía abajo y dar clic en el botón `Siguiente`.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-6.png" alt="Report create form - Next" />
+
+## Personalizar las columnas del reporte
+
+A continuación, se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-7.png" alt="Report create form - Columns" />
+
+En este modal se pueden personalizar las columnas del reporte, los nombres de las columnas se pueden modificar y la alineación de las columnas también se puede cambiar.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-8.png" alt="Report create form - Columns" />
+
+Al tener la personalización deseada, se debe dar clic en el botón `Siguiente` para continuar con la creación del reporte.
+
+## Confirmación de datos
+
+Por último, se mostrará un resumen de los datos ingresados, si todo está correcto, se debe dar clic en el botón `Guardar`.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-9.png" alt="Report create form - Confirm" />
+
+:::note Nota
+
+Los atributos se encuentran númerados del 0 a n, donde n es el número de atributos seleccionados y el 0 es el primer atributo seleccionado y posicionado en la primera columna del reporte.
+
+:::
+
+Al dar clic en el botón `Guardar`, en tiempo real, se mostrará el reporte creado en la tabla de reportes.
+
+<ImageDiv src="/img/work/sys/reports/form-new-report-11.png" alt="Report create form - Confirm" />
+
+## Actualización de reporte
+
+Para actualizar un reporte, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla de reportes, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/reports/form-edit-report-1.png" alt="Report edit form" />
+
+Al igual que se explica en la [creación](#vista-asociada) de un reporte, se pueden modificar los campos y atributos del reporte; si se modifica la vista asociada o los atributos, al dar clic en `Guardar` se redireccionará al formulario de personalización de columnas.
+
+## Actualización de columnas del reporte
+
+Para actualizar las columnas del reporte, se debe hacer clic en el botón `Atributos`, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/reports/form-edit-attrs-report.png" alt="Report edit form - Columns" />
+
+En este modal se pueden personalizar las columnas del reporte, los nombres de las columnas se pueden modificar y la alineación de las columnas también se puede cambiar. Al tener la personalización deseada, se debe dar clic en el botón `Guardar`.
+
+Este proceso es similar a la [personalización de las columnas del reporte](#personalizar-las-columnas-del-reporte) en la creación de un reporte.
+
+## Asignación de reporte a usuarios
+
+Como se explica en la sección de [formularios de relación y/o asignación](/docs/genericos/formularios#formulario-de-relación-yo-asignación), en este formulario se pueen asignar usuarios a un reporte.
+
+<ImageDiv src="/img/work/sys/reports/form-assign-report-to-user.png" alt="Report assign form" />
+
+El formulario se divide en dos partes, la parte izquierda muestra los usuarios que estan asignados o se asignarán al reporte, la parte derecha muestra a los usuarios que no están asignados o se removieron del reporte. Para poder moverlos de lugar, se debe hacer clic en el nombre del usuario deseado y en automático se moverá a la otra parte. Ejemplo, si se desea asignar al usuario `Juan` al reporte `Reporte de expedientes`, se debe hacer clic en el nombre de `Juan` y en automático se moverá a la parte izquierda.
+
+Basta con dar clic en el botón `Guardar` para que los cambios se guarden en la base de datos y se reflejen en tiempo real a todos los usuarios.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.
+
+<ImageDiv src="/img/work/sys/reports/table-reports-diferent-colors.png" alt="Colors" />
+
+Los reportes inactivos no podrán ser impresos, pero sus datos seguirán en la base de datos. Para activar un reporte, se debe hacer clic en el botón `Activar` que se encuentra en la parte derecha de la tabla de reportes, en la sección de acciones. Para inactivar un reporte, se debe hacer clic en el botón `Inactivar` que se encuentra en la parte derecha de la tabla de reportes, en la sección de acciones.

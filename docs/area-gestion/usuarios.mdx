@@ -9,3 +9,70 @@ import ImageDiv from "@site/src/components/ImageDiv";
 La vista de usuarios permite al administrador gestionar los usuarios que pueden acceder al sistema. También se pueden asignar perfiles a los usuarios para definir las acciones que pueden realizar en el sistema.
 
 <ImageDiv src="/img/work/sys/users/table-users-1.png" alt="Users page" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Correo
+* Perfil asignado
+* Nombre del usuario
+* Teléfono
+* Fecha de nacimiento
+* Último inicio de sesión
+* Última acción realizada por el usuario
+* Fecha de la última acción realizada.
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Asignar un organigrama al usuario.
+* Editar perfil del usuario.
+* Inactivar/activar.
+
+<ImageDiv src="/img/work/sys/users/table-users-2.png" alt="Users page" />
+
+## Detalle del registro
+
+Para ver el detalle de un usuario, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+<ImageDiv src="/img/work/sys/users/show-users.png" alt="Show user" />
+
+## Búsqueda
+
+Para buscar un usuario, se puede hacer uso del formulario de [búsqueda simple](/docs/genericos/formularios#búsqueda-simple) o [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación
+
+La creación de un usuario es realizada en automático por el sistema ArquosCRM, por lo que no se puede crear un usuario directamente en Arquos Files. Para más información, consulte la sección de [Registro](/docs/autenticacion/registro).
+
+## Asignación de perfil
+
+Al dar clic en el botón para actualizar la información del usuario, el administrador solo podrá actualizar el perfil del usuario. Para ello, se debe hacer clic en el botón `Editar perfil`, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/users/edit-profile-users.png" alt="Edit profile user" />
+
+Al seleccionar un perfil, se debe dar clic en el botón `Guardar`. En tiempo real, se mostrará el perfil actualizado en la tabla de usuarios.
+
+## Asignación de organigrama
+
+Al dar clic en el botón para actualizar el organigrama, el administrador tendrá que asignarle los departamentos que el usuario podrá visualizar. Al hacer clic en dicho botón, se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/sys/users/assign-organigrama-users.png" alt="Edit organigram user" />
+
+En la parte izquierda se pueden ver los departamentos o áreas a los que el usuario puede acceder y gestionar los expedientes (si tiene los permisos necesarios). En la parte derecha se pueden ver los departamentos o áreas a los que el usuario puede ser asignado.
+
+Para asignar departamentos al usuario, se debe seleccionar el departamento deseado de la parte derecha haciendo clic en él, este se moverá a la parte izquierda. Para quitar un departamento, se debe seleccionar el departamento deseado de la parte izquierda haciendo clic en él, este se moverá a la parte derecha.
+
+Para guardar los cambios, se debe dar clic en el botón `Guardar`. En tiempo real, el usuario será asignado a los departamentos seleccionados.
+
+## Inactivar/activar usuario
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+<ImageDiv src="/img/work/sys/users/activated-users.png" alt="Inactivate user" />
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.
+
+<ImageDiv src="/img/work/sys/users/innactivated-users.png" alt="Inactivate user" />
+
+Los usuarios inactivos no podrán acceder al sistema, pero sus datos seguirán en la base de datos. Para activar un usuario, se debe hacer clic en el botón `Activar` que se encuentra en la parte derecha de la tabla de usuarios, en la sección de acciones. Para inactivar un usuario, se debe hacer clic en el botón `Inactivar` que se encuentra en la parte derecha de la tabla de usuarios, en la sección de acciones.
+
+<ImageDiv src="/img/work/sys/users/table-users-3.png" alt="Activate user" />

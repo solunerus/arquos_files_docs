@@ -33,16 +33,16 @@ sidebar_position: 12
 - [x] Menú.
 - [x] Datos de empresa.
 - [x] Perfiles.
-- [ ] Usuarios.
-- [ ] Reportes.
+- [x] Usuarios.
+- [x] Reportes.
 
 ## Área de operación 6
 
-- [ ] Niveles.
-- [ ] soporte documental.
-- [ ] estructura de archivos.
-- [ ] estructura de expedientes
-- [ ] atributos de expedientes
+- [x] Niveles.
+- [x] Estructura de archivos.
+- [ ] Soporte documental.
+- [ ] Estructura de expedientes
+- [ ] Atributos de expedientes
 - [ ] Expedientes
 - [ ] Documentos.
 

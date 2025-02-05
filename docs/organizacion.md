@@ -40,9 +40,9 @@ sidebar_position: 12
 
 - [x] Niveles.
 - [x] Estructura de archivos.
-- [ ] Soporte documental.
-- [ ] Estructura de expedientes
-- [ ] Atributos de expedientes
+- [x] Soporte documental.
+- [x] Atributos de expedientes
+- [x] Estructura de expedientes
 - [ ] Expedientes
 - [ ] Documentos.
 

@@ -1,7 +1,123 @@
 ---
-sidebar_position: 5
+sidebar_position: 4
 ---
 
 import ImageDiv from "@site/src/components/ImageDiv";
 
 # Atributos de expedientes
+
+La vista de atributos de expedientes permite al administrador gestionar los atributos que se pueden asignar a la estructura del expediente. Los atributos son los campos que se pueden agregar a la estructura del expediente para definir las características de los expedientes.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/table-attrs-expedientes.png" alt="Atributos de expedientes" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador del atributo
+* Descripción del atributo
+* Tipo de dato del atributo
+* Valor(es) aceptado(s)
+* Fecha de última actualización
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Actualizar atributo de expediente.
+* Relacionar atributos de expediente.
+* Inactivar/activar.
+
+Los atributos que en esta vista se gestionan funcionan como campos de la [estructura de expediente](/docs/area-operacion/estructura-expedientes#creación).
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-2.png" alt="Nueva estructura de expedientes 2" />
+
+## Detalle del registro
+
+Para ver el detalle de un atributo de expediente, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/show-attr-expediente.png" alt="Show" />
+
+## Búsqueda
+
+Para buscar un atributo de expediente, se puede hacer uso del formulario de [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación
+
+Para crear un atributo de expediente, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-1.png" alt="Form new 1" />
+
+Existen 4 tipos de dato que se pueden asignar a un atributo de expediente:
+
+* Texto
+* Númerico
+* Fecha
+* Decisión
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-2.png" alt="Form new 2" />
+
+### Tipo de dato: Texto
+
+Cuando se selecciona el tipo de dato `Texto`, se debe ingresar el posible valor que puede llegar a tener el atributo. Este valor es necesario para ayudar al usuario a identificar el tipo de dato que se debe ingresar y evitar errores.
+
+El usuario puede ingresar otro valor diferente al que se muestra en el campo `Valor(es) aceptado(s)`, pero se recomienda que el valor ingresado sea similar o este dentro del contexto al que se muestra.
+
+Este dato aparece en el formulario de creación de expediente como un `placeholder`.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-1.png" alt="Form new 1" />
+
+### Tipo de dato: Número
+
+Cuando se selecciona el tipo de dato `Número`, se debe ingresar un valor mínimo y máximo que puede llegar a tener el atributo. Este valor es necesario para ayudar al usuario a identificar el tipo de dato que se debe ingresar y evitar errores.
+
+El valor mínimo y máximo ingresado son números enteros. Este valor es un rango obligatorio para el usuario y no puede ser omitido.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-3.png" alt="Form new 3" />
+
+### Tipo de dato: Fecha
+
+Cuando se selecciona el tipo de dato `Fecha`, se debe ingresar solo la `descripción` del atributo, pero al usuario se le mostrará un campo de fecha en el formulario de creación de estructura de expediente.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-4.png" alt="Form new 4" />
+
+### Tipo de dato: Decisión
+
+Cuando se selecciona el tipo de dato `Decisión`, el usuario debe ingresar el valor negativo y el valor positivo que puede llegar a tener el atributo. Este valor es necesario para ayudar al usuario a identificar el tipo de dato que va a ingresar y evitar errores.
+
+Al usuario se le mostrará un `switch` en el formulario de creación de estructura de expediente para seleccionar el valor.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-new-attr-expediente-5.png" alt="Form new 5" />
+
+:::note Nota
+
+Independientemente del tipo de dato seleccionado, el campo `Descripción` es necesario para identificar el atributo.
+
+:::
+
+## Actualización
+
+Para actualizar un atributo de expediente, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla de atributos de expediente, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-edit-attr-expediente.png" alt="Form edit" />
+
+:::note Nota
+
+Dependiendo del tipo de dato que tiene el atributo, se mostrará el valor que se ingresó en el formulario de creación. Este valor puede ser modificado y guardado.
+
+:::
+
+## Relaciones
+
+Como se explica en la sección de [formularios de relación y/o asignación](/docs/genericos/formularios#formulario-de-relación-yo-asignación), en este formulario se pueden asignar atributos de expediente a una estructura de expediente.
+
+<ImageDiv src="/img/work/opr/attrs-expedientes/form-relation-attr-expediente.png" alt="Form relation" />
+
+El formulario se divide en dos partes, la parte izquierda muestra los atributos de expediente que estan asignados o se asignarán a la estructura de expediente, la parte derecha muestra a los atributos de expediente que no están asignados o se removieron de la estructura de expediente. Para poder moverlos de lugar, se debe hacer clic en el nombre del atributo de expediente deseado y en automático se moverá a la otra parte. Ejemplo, si se desea asignar al atributo de expediente `Nombre` a la estructura de expediente `Expediente de clientes`, se debe hacer clic en el nombre de `Nombre` y en automático se moverá a la parte izquierda.
+
+Dependiendo el tipo de dato que tiene el atributo, se mostrará un campo en la esquina inferior izquierda del modal para ingresar el valor del atributo.
+
+Basta con hacer clic en el botón `Guardar` para guardar la relación.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.

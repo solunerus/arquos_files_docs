@@ -5,3 +5,65 @@ sidebar_position: 3
 import ImageDiv from "@site/src/components/ImageDiv";
 
 # Soporte documental
+
+La vista de soporte documental permite al administrador visualizar los tipos de documentos que se pueden agregar a las plantillas (expedientes) y a los cuales se cargan los documentos.
+
+El soporte documental es una abstracción genérica de los tipos de documentos que se pueden cargar en los expedientes, por ejemplo, si se tiene un expediente de un empleado, se pueden cargar documentos como la cédula de identidad, el título universitario, entre otros.
+
+<ImageDiv src="/img/work/opr/soporte-documental/table-soporte-documental.png" alt="Soporte documental" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador del soporte documental
+* Descripción del soporte documental
+* Nombre corto del soporte documental
+* Última fecha de actualización.
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Actualizar soporte documental.
+* Relacionar soporte documental con la estructura de expedientes.
+* Inactivar/activar.
+
+## Detalle del registro
+
+Para ver el detalle de un soporte documental, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+
+<ImageDiv src="/img/work/opr/soporte-documental/show-soporte-documental.png" alt="Detalle del soporte documental" />
+
+## Búsqueda
+
+Para buscar un soporte documental, se puede hacer uso del formulario de [búsqueda simple](/docs/genericos/formularios#búsqueda-simple) o [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación
+
+Para crear una estructura de archivo, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/soporte-documental/form-new-soporte-documental.png" alt="Nuevo soporte documental" />
+
+Solo se debe ingresar la descripción y el nombre corto del soporte documental y dar clic en el botón `Guardar`. En tiempo real, se mostrará el soporte documental creado en la tabla.
+
+## Actualización
+
+Para actualizar un soporte documental, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla de soporte documental, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/soporte-documental/form-edit-soporte-documental.png" alt="Editar soporte documental" />
+
+Solo se debe modificar la descripción y el nombre corto del soporte documental y dar clic en el botón `Guardar`. En tiempo real, se mostrará el soporte documental actualizado en la tabla.
+
+## Relaciones
+
+Como se explica en la sección de [formularios de relación y/o asignación](/docs/genericos/formularios#formulario-de-relación-yo-asignación), se puede relacionar el soporte documental con la estructura de expedientes.
+
+<ImageDiv src="/img/work/opr/soporte-documental/form-relation-soporte-documental.png" alt="Relación soporte documental" />
+
+El formulario se divide en dos partes, la parte izquierda muestra los tipos de archivo (estructura de expediente) que estan relacionados o se relacionarán con el soporte documental, la parte derecha muestra los tipos de archivo que se pueden relacionar (pero no lo están aún) con el soporte documental. Para moverlos de un lado a otro, se debe hacer clic en el nombre del elemento deseado y en automático se moverá a la otra lista. Ejemplo, si se desea relacionar el soporte documental con el tipo de archivo `Archivo Material de reparaciones`, se debe hacer clic en el nombre de dicho elemento y se moverá a la lista de la izquierda.
+
+Basta con dar clic en el botón `Guardar` para que los cambios se guarden en la base de datos y se reflejen en tiempo real a todos los usuarios.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.

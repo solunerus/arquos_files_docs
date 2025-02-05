@@ -5,3 +5,141 @@ sidebar_position: 7
 import ImageDiv from "@site/src/components/ImageDiv";
 
 # Documentos
+
+La vista de documentos permite a los usuarios gestionar los diversos documentos en un expediente. Los documentos son los archivos que se deben cargar para un proceso documental específico. Por ejemplo, si se tiene un expediente de un empleado, se pueden cargar documentos como la cédula de identidad, el títutlo universitario, entro otros.
+
+<ImageDiv src="/img/work/opr/documentos/table-docs.png" alt="Documentos" />
+
+Esta vista es diferente a las otras vistas de la aplicación, a continuación se hace una explicación de los elementos que la componen:
+
+* **Nombre del expediente**: Es el nombre del expediente abierto.
+* **Botón de descarga**: Permite descargar todos los documentos del expediente en un archivo `.zip`.
+* **Formulario de búsqueda de documentos**: Son los formularios que permiten buscar documentos en el expediente. Existen dos tipos de búsqueda: [simple](/docs/genericos/formularios#búsqueda-simple) y [avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+* **Tabla de documentos**: Muestra los documentos que componen el expediente.
+
+La tabla de documentos a su vez tiene los siguientes elementos:
+
+* **Tipo de documento**: Es el tipo de documento que se debe cargar o que se ha cargado.
+* **Identificador del documento**: Es el identificador del documento.
+* **Descripción del documento**: Es la descripción del documento.
+* **Fecha del documento**: Es la fecha de emisión del documento. No es la fecha de creación del documento en el sistema, es la fecha del documento.
+* **Contacto del documentador**: Es el correo del usuario que cargó el documento.
+* **Última fecha de actualización**: Es la fecha de la última actualización del documento.
+* **Acciones**: Son las acciones que se pueden realizar con el documento.
+
+## Acciones en la vista de documentos
+
+<ImageDiv src="/img/work/opr/documentos/table-btns-docs.png" alt="Btns Documentos" />
+
+Las acciones que se pueden realizar son las siguientes:
+
+### Documento cargado
+
+Un documento cargado permite [descargar el documento](#descargar-documento), [ver el detalle del documento](#detalle-del-documento) al dar clic en el registro deseado y [eliminar el documento](#eliminar-documento).
+
+### Documento no cargado
+
+Permite [agregar](#agregar-documento) un documento al expediente.
+
+## Agregar documento
+
+Agregar un documento es un proceso sencillo, se debe hacer clic en el botón `Cargar` o similar que se encuentra en la parte derecha del tipo de documento a subir, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/documentos/form-add-doc-1.png" alt="Agregar Documento" />
+
+A continuación se explica cada elemento del formulario:
+
+* **Seleccionar archivo**: Es el botón que permite seleccionar el archivo a cargar, al hacer clic se abrirá el explorador de archivos del sistema operativo. Solo se pueden cargar archivos con extensión `.pdf`.
+* **Fecha del documento**: Es la fecha de emisión del documento. No es la fecha de creación del documento en el sistema, es la fecha del documento.
+* **Identificador del documento**: Es el identificador del documento que se está cargando. Por ejemplo, si se carga una cédula de identidad, el identificador puede ser el número de cédula.
+* **Descripción del documento**: Es la descripción del documento que se está cargando. Por ejemplo, si se carga una cédula de identidad, la descripción puede ser `Cédula de identidad`.
+* **Atributo**: Es el nombre del atributo extra que se puede agregar al documento. Por ejemplo, si se esta cargando una copia de escritura de una propiedad, el atributo puede ser `Dirección de la propiedad`. Este campo es opcional.
+* **Valor del atributo**: Es el valor del atributo extra que se puede agregar al documento. Por ejemplo, si se esta cargando una copia de escritura de una propiedad, el valor del atributo puede ser `Calle 1, Calle 2, Calle 3`. Este campo es opcional.
+* **Botón de agregar atributo**: Cuando los campos `Atributo` y `Valor del atributo` están llenos, se debe hacer clic en este botón para agregar el atributo al documento.
+* **Botón de eliminar atributo**: Permite eliminar el atributo extra que se ha agregado al documento. Aparece a la par del atributo extra.
+* **Botón de guardar**: Permite guardar el documento en el expediente.
+
+<ImageDiv src="/img/work/opr/documentos/form-add-doc-2.png" alt="Agregar Documento" />
+
+Los atributos son campos extra, se pueden considerar como campos personalizados que se pueden agregar a un documento. Sirven para enriquecer la información del documento.
+
+<ImageDiv src="/img/work/opr/documentos/form-add-doc-3.png" alt="Agregar Documento" />
+
+Por cada atributo que se agregue, se mostrará un registro en la parte inferior del formulario. Se puede agregar más de un atributo al documento. Por cada atributo existirá un botón de eliminar, al precionarlo, el atributo se eliminará del documento.
+
+## Detalle del documento
+
+Al dar clic en el registro deseado, se muestra una nueva vista que se puede dividir en 3 partes, la primer parte consta de el detalle del documento, la información mostrada es la siguiente:
+
+* Descripción del documento.
+* Nombre del expediente al que pertenece el documento.
+* Identificador del documento.
+* Tipo del documento.
+* Fecha del documento.
+* Contacto del documentador.
+
+<ImageDiv src="/img/work/opr/documentos/show-doc-1.png" alt="Documento" />
+
+La segunda parte es la visualización del documento, las opciones que se pueden realizar son las siguientes:
+
+* Desplazamiento en las hojas del documento, se puede hacer clic en las flechas para avanzar o retroceder. Así también se puede hacer scroll en el documento.
+* Ir a una página específica, se puede ingresar el número de página y precionar `Enter` para ir a la página deseada.
+* Se muestra la cantidad de páginas del documento.
+* Se puede hacer zoom en el documento, se puede hacer clic en los botones `+` o `-` para hacer zoom.
+* Se puede hacer zoom en el documento seleccionando el porcentaje deseado en el campo de zoom.
+
+Si el usuario tiene permisos para descargar o imprimir el documento, se mostrarán los botones `Descargar` e `Imprimir`.
+
+<ImageDiv src="/img/work/opr/documentos/show-doc-2.png" alt="Documento" />
+
+En la tercera parte se muestra una tabla con los atributos extra que se han agregado al documento, la información mostrada es el nombre del atributo y el valor del atributo.
+
+En la parte de abajo existen dos botones, el de la izquierda `Regresar a Documentos` permite regresar a la vista de documentos del expediente, el de la derecha `Ir al documento` permite ir a una vista de pantalla completa del documento.
+
+### Pantalla completa del documento
+
+Esta vista muestra el documento en pantalla completa, permite las acciones que se pueden realizar en la vista de detalle del documento, pero en pantalla completa. Esta vista no muestra los atributos extra que se han agregado al documento ni la información del documento.
+
+<ImageDiv src="/img/work/opr/documentos/download-doc-1.png" alt="Descarga Documento" />
+
+## Eliminar documento
+
+Para eliminar un documento, se debe hacer clic en el botón `Eliminar` que se encuentra en la parte derecha del registro deseado, a continuación se abrirá un modal de confirmación como el siguiente:
+
+<ImageDiv src="/img/work/opr/documentos/form-delete-doc.png" alt="Eliminar Documento" />
+
+Esta acción elimina el documento y toda su información por completo, no se puede recuperar el documento una vez eliminado.
+
+Se solicita una explicación (observación) de por qué se está eliminando el documento, este campo es obligatorio. Una vez ingresado el motivo, se debe hacer clic en el botón `Eliminar` para confirmar la acción.
+
+## Descargar
+
+### Descargar todos los documentos del expediente
+
+<ImageDiv src="/img/work/opr/documentos/table-docs.png" alt="Documentos" />
+
+Al dar clic en el botón `Descargar` se descargará un archivo `.zip` con todos los documentos actualmente cargados en el expediente.
+
+<ImageDiv src="/img/work/opr/documentos/download-zip.png" alt="Descarga ZIP" />
+
+### Descargar documento
+
+Si se desea descargar solo un documento, se debe hacer clic en el botón `Descargar` que se encuentra en la parte derecha del registro deseado, a continuación se descargará el documento en el sistema.
+
+<ImageDiv src="/img/work/opr/documentos/download-btn.png" alt="Btn Descarga Documento" />
+
+### Descargar documento en pantalla completa
+
+Basta con hacer clic en el icono de descargar que se encuentra en la parte superior derecha de la vista de pantalla completa del documento.
+
+<ImageDiv src="/img/work/opr/documentos/download-doc-1.png" alt="Descarga Documento" />
+
+Se descargará el documento en el sistema.
+
+<ImageDiv src="/img/work/opr/documentos/download-doc-2.png" alt="Descarga Documento" />
+
+:::info Importante
+
+Si no ves alguna opción, muy posiblemente no tengas los permisos necesarios para realizarla. Consulta con tu administrador.
+
+:::

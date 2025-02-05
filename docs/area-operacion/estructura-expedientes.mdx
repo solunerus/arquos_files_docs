@@ -1,7 +1,101 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 import ImageDiv from "@site/src/components/ImageDiv";
 
 # Estructura de expedientes
+
+La vista de estructura de expedientes permite al administrador gestionar las diversas plantillas de los expedientes de la empresa. Las plantillas son los bloques que agrupan los tipos de documentos que se componen los expedientes.
+
+La estructura de expedientes es una abstracción del expediente, ubicando los tipos de documentos necesarios en el expediente, por ejemplo, si se tiene un expediente de un empleado, se pueden cargar documentos como la cédula de identidad, el título universitario, entre otros.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/table-estructura-expedientes.png" alt="Estructura de expedientes" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* Identificador de la estructura de expedientes
+* Descripción de la estructura de expedientes
+* Clave de la estructura de expedientes
+* Fecha de creación
+* Fecha de última actualización
+* Acciones
+
+Las acciones que se pueden hacer son las siguientes:
+
+* Actualizar estructura de expedientes.
+* Inactivar/activar.
+
+## Detalle del registro
+
+Para ver el detalle de una estructura de expedientes, se debe hacer clic en el registro deseado. Se mostrará una nueva vista con la siguiente información:
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/show-estructura-expediente.png" alt="Detalle de la estructura de expedientes" />
+
+## Búsqueda
+
+Para buscar una estructura de expedientes, se puede hacer uso del formulario de [búsqueda simple](/docs/genericos/formularios#búsqueda-simple) o [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/search-estructura-expediente.png" alt="Filtro de estructura de expedientes" />
+
+Así también, la estructura de expediente se agrupa en los [niveles](/docs/area-operacion/niveles), los cuales son los bloques que agrupan a los departamentos y áreas de la empresa.
+
+:::info Importante
+
+Cada `plantilla` de expediente se crea dentro de un `departamento` o `área`.
+
+:::
+
+## Creación
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-1.png" alt="Nueva estructura de expedientes 1" />
+
+Para crear una estructura de expediente, se debe posicionar en el nivel deseado, al seleccionar el nivel y departamento o área, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-2.png" alt="Nueva estructura de expedientes 2" />
+
+Se deben ingresar la descripción y el nombre corto de la estructura de expedientes, seguido de ello, se debe seleccionar el [atributo](/docs/area-operacion/atributos-expedientes) que se desee agregar y agregar el valor correspondiente de dicho atributo.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-3.png" alt="Nueva estructura de expedientes 3" />
+
+Se puede observar que al seleccionar un atributo, se despliega otra opción al formulario, y depende del tipo de atributo que se haya seleccionado. Cuando se haya ingresado el valor deseado, se hace clic en `Agregar atributo` para agregar dicho atributo a la estructura de expedientes.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-4.png" alt="Nueva estructura de expedientes 4" />
+
+Una vez agregado el atributo, veremos el nombre del atributo, el valor dado y la opción de eliminarlo (en caso de necesitarlo).
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-5.png" alt="Nueva estructura de expedientes 5" />
+
+Si se da clic de nuevo en la selección de atributos, se puede agregar otro atributo a la estructura de expedientes.
+
+:::note Nota
+
+Al ir seleccionando los atributos, se van eliminando de la lista de atributos disponibles.
+
+:::
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-6.png" alt="Nueva estructura de expedientes 6" />
+
+Según el tipo de atributo, la petición del valor puede variar, por ejemplo, si el atributo es de tipo `fecha`, se desplegará un calendario para seleccionar la fecha. Si el atributo es un número, se desplegará un campo de texto para ingresar el número.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-7.png" alt="Nueva estructura de expedientes 7" />
+
+Si deseamos eliminar un atributo, se debe hacer clic en el botón de eliminar, y se eliminará el atributo de la estructura de expedientes y se agregará nuevamente a la lista de atributos disponibles.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-new-estructura-expediente-8.png" alt="Nueva estructura de expedientes 8" />
+
+## Asignación
+
+Como se explica en la sección de [formularios de relación y/o asignación](/docs/genericos/formularios#formulario-de-relación-yo-asignación), se puede asignar la estructura de expedientes a un soporte documental.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/form-relation-estructura-expediente.png" alt="Asignación de estructura de expedientes" />
+
+El formulario se divide en dos partes, la parte izquierda muestra los soportes documentales que están relacionados o se relacionarán con la estructura de expedientes, la parte derecha muestra los soportes documentales que se pueden relacionar (pero no lo están aún) con la estructura de expedientes. Para moverlos de un lado a otro, se debe hacer clic en el nombre del elemento deseado y en automático se moverá a la otra lista. Ejemplo, si se desea relacionar la estructura de expedientes con el soporte documental `Cédula de identidad`, se debe hacer clic en el nombre de dicho elemento y se moverá a la lista de la izquierda.
+
+Basta con hacer clic en el botón `Guardar` para guardar la relación.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento.

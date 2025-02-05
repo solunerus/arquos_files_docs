@@ -5,3 +5,86 @@ sidebar_position: 6
 import ImageDiv from "@site/src/components/ImageDiv";
 
 # Expedientes
+
+La vista de expedientes permite a los usuarios gestionar los diversos expedientes de la empresa. Los expedientes son los contenedores de los documentos que se deben cargar para un proceso documental específico. Por ejemplo, si se tiene un expediente de un empleado, se pueden cargar documentos como la cédula de identidad, el título universitario, entre otros.
+
+<ImageDiv src="/img/work/opr/expedientes/table-expedientes-1.png" alt="Expedientes" />
+
+Los datos mostrados en la tabla son los siguientes:
+
+* ID único y autoincrementable del expediente.
+* Tipo de archivo. Es el tipo de [estructura de expediente](/docs/area-operacion/estructura-expedientes) al cual pertenece, la estructura del expediente es una plantilla que indica los tipos de documentos que se deben cargar en el expediente.
+* Descripción del expediente, también se puede considerar como el nombre del expediente.
+* Identificador del expediente.
+* Agrupador del expediente.
+* Año del expediente.
+* Mes del expediente.
+* Fecha de creación del expediente en el sistema.
+* Fecha de última actualización del expediente en el sistema.
+
+<ImageDiv src="/img/work/opr/expedientes/table-expedientes-2.png" alt="Expedientes" />
+
+Las acciones que se pueden realizar son las siguientes:
+
+* Actualizar expediente.
+* Inactivar/activar expediente.
+
+<ImageDiv src="/img/work/opr/expedientes/table-expedientes-3.png" alt="Expedientes" />
+
+## Filtro
+
+El filtro consta de 3 elementos importantes:
+* **El campo de búsqueda** en el cual se ingresa el nombre del departamento o área.
+* **La ruta en el organigrama** que indica la ubicación del departamento o área.
+* **El botón de búsqueda** que permite realizar dicha operación.
+
+<ImageDiv src="/img/work/opr/expedientes/search-expediente-1.png" alt="Search Expedientes" />
+
+El filtro funciona con los [departamentos y áreas](/docs/area-gestion/usuarios#asignación-de-organigrama) asignados al usuario. Si el usuario no tiene asignado un departamento o área, el filtro no mostrará información. 
+
+<ImageDiv src="/img/work/opr/expedientes/search-expediente-2.png" alt="Search Expedientes" />
+
+### Funcionamiento
+
+El usuario busca el departamento o área deseada, puede terminar de escribir el nombre o seleccionarlo de la lista desplegable. Al seleccionar el elemento deseado, se debe hacer clic en el botón de búsqueda para obtener los expedientes asociados.
+
+## Búsqueda
+
+Para buscar un expediente, se puede hacer uso del formulario de [búsqueda simple](/docs/genericos/formularios#búsqueda-simple) o [búsqueda avanzada](/docs/genericos/formularios#búsqueda-avanzada).
+
+## Creación
+
+La creación va de la mano con el filtro, se debe seleccionar el departamento o área al que se desee agregar un nuevo expediente, dar clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/expedientes/form-new-expediente-1.png" alt="New Expedientes" />
+
+Los datos que se solicitan son los siguientes:
+
+* **Tipo de archivo**: Es el tipo de [estructura de expediente](/docs/area-operacion/estructura-expedientes) al cual pertenece, la estructura del expediente es una plantilla que indica los tipos de documentos que se deben cargar en el expediente.
+* **Descripción**: Es el nombre del expediente.
+* **Identificador**: Es un campo que se puede utilizar para identificar el expediente.
+* **Agrupador**: Es un campo que se puede utilizar para agrupar expedientes. 
+* **Año**: Es el año al que pertenece el expediente.
+* **Mes**: Es el mes al que pertenece el expediente.
+
+<ImageDiv src="/img/work/opr/expedientes/form-new-expediente-2.png" alt="New Expedientes" />
+
+:::info Ejemplo
+
+En la imagen anterior se muestra como en el departamento o área seleccionado solo existen dos estructuras de expedientes, por lo que al crear un nuevo expediente, solo se pueden seleccionar estas dos estructuras.
+
+:::
+
+## Actualización
+
+Para actualizar un expediente, se debe hacer clic en el botón de edición que se encuentra en la parte derecha de la tabla, en la sección de acciones, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/expedientes/form-edit-expediente.png" alt="Edit Expedientes" />
+
+Los datos que se pueden modificar son los mismos que en la creación de un expediente. Al modificar el `tipo de archivo`, se cambia la estructura del expediente, por lo que los documentos que se hayan cargado previamente se descartarán.
+
+## Activación/Desactivación
+
+La explicación de estos formularios se puede encontrar en la sección de [formularios de inactivación](/docs/genericos/formularios#formulario-de-inactivación) y [formularios de activación](/docs/genericos/formularios#formulario-de-activación).
+
+Los registros no se eliminan, sino que pasan a un estado de activación/desactivación, por lo que se pueden activar/desactivar nuevamente en cualquier momento. Así también pasa con los documentos que fueron cargados de un expediente inactivo.

@@ -43,28 +43,29 @@ sidebar_position: 12
 - [x] Soporte documental.
 - [x] Atributos de expedientes
 - [x] Estructura de expedientes
-- [ ] Expedientes
-- [ ] Documentos.
+- [x] Expedientes
+- [x] Documentos.
 
-## Tutorial - Carga de documento 7
+## Tutorial - Perfiles y usuarios 7
 
-- [ ] Expedientes.
-- [ ] Localización.
-- [ ] Carga de documento.
-- [ ] Visualización.
+- [x] Perfiles
+- [x] Alta de usuarios en Arquos Files.
+- [x] Asignación de perfil a usuarios.
+- [x] Asignación de usuarios a perfiles.
 
 ## Tutorial - Creación de expediente 8
 
+- [ ] Soporte documental (creación, asignación / relación).
+- [ ] Atibutos de expediente (creación, asignación /relación).
+- [ ] Estructura de expediente (creación, asignación /relación).
 - [ ] Creación de expediente.
-- [ ] Localización.
-- [ ] Asignación de documento.
+- [ ] Carga de documentos (redirección a `Tutorial - Carga de documento`).
 
-## Tutorial - Perfiles y usuarios 9
+## Tutorial - Carga de documento 9
 
-- [ ] Creación de perfiles.
-- [ ] Alta de usuarios en Arquos Files.
-- [ ] Asignación de usuarios a perfiles.
-- [ ] Asignación de perfil a usuarios.
+- [ ] Generación de documentos (explicación).
+- [ ] Carga de documento (subida).
+- [ ] Visualización (show).
 
 ## Genericos 10
 

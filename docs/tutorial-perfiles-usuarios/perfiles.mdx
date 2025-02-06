@@ -1,0 +1,27 @@
+---
+sidebar_position: 1
+---
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
+# Perfiles
+
+Los [perfiles](/docs/area-gestion/perfiles) son un conjunto de permisos que se pueden asignar a los usuarios, estos permisos definen las acciones que un usuario puede realizar en el sistema.
+
+Los permisos se basan en las rutas y acciones que se pueden visitar en la aplicación. Toda acción del sistema tiene una ruta asociada, por lo que los perfiles se pueden asignar a una o varias rutas.
+
+## Creación del perfil
+
+La [creación](/docs/area-gestion/perfiles#creación) es muy sencilla, basta con dar clic en el botón de `Agregar` o `Nuevo` para abrir el formulario de creación de perfiles. En este formulario solo se debe ingresar la descripción del perfil y dar clic en el botón `Guardar`.
+
+<ImageDiv src="/img/work/sys/profiles/new-profile.png" alt="Formulario de creación de perfiles" />
+
+## Asignar permisos al perfil
+
+Cuando se crea un perfil, este no tiene permisos asignados, por lo que es necesario [relacionar](/docs/area-gestion/perfiles#relación) las opciones del menú con el perfil seleccionado. Para ello se debe hacer clic en el botón que sirve para relacionar (debido a la personalización en las acciones del menú, no es posible saber el nombre exacto de este botón).
+
+<ImageDiv src="/img/work/sys/profiles/relation-profile-with-menu-options.png" alt="Profile relate form" />
+
+El funcionamiento de este modal se explica en la sección de [Funcionamiento de relación](/docs/area-gestion/perfiles#funcionamiento-de-relación).
+
+Una vez asignados los permisos, el perfil estará listo para ser asignado a los usuarios del sistema.

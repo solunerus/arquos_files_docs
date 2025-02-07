@@ -55,9 +55,9 @@ sidebar_position: 12
 
 ## Tutorial - Creación de expediente 8
 
-- [ ] Soporte documental (creación, asignación / relación).
-- [ ] Atibutos de expediente (creación, asignación /relación).
-- [ ] Estructura de expediente (creación, asignación /relación).
+- [x] Creación de Soporte documental (creación, asignación / relación).
+- [x] Creación de Atibutos de expediente (creación, asignación /relación).
+- [x] Creación de Estructura de expediente y asignación de soporte documental.
 - [ ] Creación de expediente.
 - [ ] Carga de documentos (redirección a `Tutorial - Carga de documento`).
 

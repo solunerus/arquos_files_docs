@@ -1,0 +1,37 @@
+---
+sidebar_position: 3
+---
+
+import {ImageDiv, VideoPlayer} from "@site/src/components/MediaHelpers";
+
+# Paso 3: Creación de estructura de expediente y asignación de soporte documental
+
+La [estructura de expediente](/docs/area-operacion/estructura-expedientes) es indispensable para lograr el objetivo del sistema Arquos Files, ya que es una abstracción de un expediente, es decir, es la forma en la que se organiza la información de un expediente.
+
+A continuación, se da un ejemplo de cómo crear una estructura de expediente.
+
+## Buscando la ruta
+
+Para crear una estructura de expediente, se debe posicionar en el departamento o área deseada, para eso, se debe buscar la ruta en el organigrama de la empresa, esto se realiza buscando por los departamentos o áreas que tiene cada nivel, si un departamento tiene subdepartamentos, hará que aparezca un nuevo selector con el nombre del siguiente `Nivel`.
+
+<ImageDiv src="/img/work/opr/estructura-expedientes/search-estructura-expediente.png" alt="Filtro de estructura de expedientes" />
+
+### Exploración de niveles, departamentos y posicionamiento en el lugar deseado
+
+Supongamos que deseamos crear una estructura de expediente en el departamento `Distribución de Agua Potable`, para ello, se debe seleccionar los departamentos de mayor jerarquía hasta llegar al departamento deseado.
+
+<VideoPlayer src="/img/tutorial/expediente/desplazamiento-niveles.mov" />
+
+## Creación 
+
+Una vez posicionado en el departamento o área deseada, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal en el cual debemos agregar una descripción y un nombre corto de la estructura de expediente, así como seleccionar los [atributos de expedientes](/docs/area-operacion/atributos-expedientes) que se deseen agregar y agregar el valor correspondiente de dicho atributo.
+
+<VideoPlayer src="/img/tutorial/expediente/creacion-estructura-expediente.mov" />
+
+## Asignación de soporte documental
+
+Una vez creada la estructura de expediente, se procede a agreagr el soporte documental, es decir, los tipos de documentos que se pueden cargar en los expedientes de este tipo.
+
+<VideoPlayer src="/img/tutorial/expediente/asignacion-estructura-exp.mov" />
+
+Como se puede ver al final del video, si se desea actualizar basta con entrar otra vez al modal anterior y ver o modificar los datos.

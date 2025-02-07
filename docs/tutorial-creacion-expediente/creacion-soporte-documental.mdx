@@ -1,0 +1,31 @@
+---
+sidebar_position: 1
+---
+
+import ImageDiv from "@site/src/components/ImageDiv";
+
+# Paso 1: Creación de soporte documental
+
+Antes de comenzar la creación de un expediente, se necesitan los tipos de documento ([soporte documental](/docs/area-operacion/soporte-documental)) que se pueden agregar a las plantillas (expedientes) y a los cuales se cargan los documentos.
+
+El soporte documental es una abstracción genérica de los tipos de documentos que se pueden cargar en los expedientes, por ejemplo, si se tiene un expediente de un empleado, se pueden cargar documentos como la cédula de identidad, el título universitario, entre otros.
+
+A continuación, se da un ejemplo de cómo crear un soporte documental.
+
+## Modal de creación
+
+Para crear un soporte documental, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal como el siguiente:
+
+<ImageDiv src="/img/work/opr/soporte-documental/form-new-soporte-documental.png" alt="Nuevo soporte documental" />
+
+Supongamos que creamos un nuevo tipo de documento llamado `Credencial de elector`, se debe ingresar la descripción y el nombre corto del soporte documental y dar clic en el botón `Guardar`.
+
+<ImageDiv src="/img/tutorial/expediente/form-new-soporte-documental.png" alt="Nuevo soporte documental" />
+
+## Actualización en tiempo real
+
+En tiempo real, se mostrará el soporte documental creado en la tabla.
+
+<ImageDiv src="/img/tutorial/expediente/noti-soporte-documental.png" alt="Soporte documental" />
+
+Una vez creado el soporte documental, se procede a la creación de atributos de expedientes.

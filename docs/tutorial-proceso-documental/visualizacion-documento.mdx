@@ -1,0 +1,89 @@
+---
+sidebar_position: 3
+---
+
+import {ImageDiv, VideoPlayer} from "@site/src/components/MediaHelpers";
+
+# Visualización del documento
+
+Al dar clic en el registro deseado, se muestra una vista donde se permite visualizar [3 partes](/docs/area-operacion/documentos#detalle-del-documento), la primera es el detalle del documento, la segunda es el visor del documento y la tercera es la tabla de atributos extra agregados al documento.
+
+<ImageDiv src="/img/tutorial/proceso-documental/detalle-documento.png" alt="Detalle del documento" />
+
+## Detalle del documento
+
+El [detalle del documento](/docs/area-operacion/documentos#detalle-del-documento) se compone de la siguiente información:
+
+* Descripción del documento, campo `Descripción`.
+* Nombre del Expediente, campo `Expediente`.
+* Identificador del documento, campo `Identificador`.
+* Soporte documental al que pertenece el documento, campo `Tipo del documento`.
+* Fecha que tiene el documento, campo `Fecha documento`.
+* Correo electrónico del documentador, campo `Contacto del documentador`.
+
+<ImageDiv src="/img/tutorial/proceso-documental/detalle-doc-1.png" alt="Detalle del documento" />
+
+## Documento
+
+Arquos Files cuenta con un visor de archivos `pdf` el cual permite a todos los tipos de navegador poder visualizar el archivo sin necesidad de descargarlo. A continuación se describirán las acciones que se pueden realizar con este visor.
+
+
+<ImageDiv src="/img/tutorial/proceso-documental/detalle-doc-2.png" alt="Visor del documento" />
+
+### Desplazamiento
+
+#### Flechas
+
+El visor permite realizar el desplazamiento entre hojas por medio de las flechas `izquierda` y `derecha`.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/desplazamiento-flechas.mov" />
+
+#### Scroll
+
+El visor permite realizar el desplazamiento entre hojas por medio del clásico `scroll`, este es el desplazamiento común en la web.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/desplazamiento-scroll.mov" />
+
+#### Campo de texto
+
+El visor permite posicionarse en la página deseada por medio del campo de texto, en el se agrega el número de la página a la que se desea desplazar y se preciona `Enter`, esto hará que el visor se desplace a dicha página.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/desplazamiento-campo-texto.mov" />
+
+### Zoom
+
+#### Botones
+
+El visor permite realizar zoom al documento con ayuda de los botones `-` y `+`. 
+
+<VideoPlayer src="/img/tutorial/proceso-documental/zoom-btns.mov" />
+
+#### Zoom definido
+
+El visor cuenta con zoom previamente definido con el cuál se puede hacer zoom más rápido y evitar muchos clics a los botones de zoom.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/zoom-definido.mov" />
+
+### Imprimir documento
+
+El visor permite imprimir el documento con solo dar clic en el icono de impresora.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/imprimir-doc.mov" />
+
+### Descarga del documento
+
+El visor permite descargar el documento, esto último solo si el usuario tiene permisos para hacerlo.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/descargar-doc.mov" />
+
+## Atributos del documento
+
+En la parte inferior se pueden encontrar los atributos extra agregados al documento, estos atributos sirven para enriquecer la información del documento.
+
+<ImageDiv src="/img/tutorial/proceso-documental/atributos-documento.png" alt="Atributos del documento" />
+
+## Vista completa del documento
+
+Para abrir la vista completa del documento basta con dar clic en el texto `Ir al documento` posicionado en la parte superior derecha y en la parte inferior derecha del documento. Al dar clic en dicho texto, se abrirá una nueva vista donde se puede visualizar el mismo visor del documento, con la diferencia de que el detalle del documento y los atributos extra del documento no se muestran en esta vista.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/vista-completa-doc.mov" />

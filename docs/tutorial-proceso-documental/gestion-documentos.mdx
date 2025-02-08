@@ -1,0 +1,58 @@
+---
+sidebar_position: 2
+---
+
+import {ImageDiv, VideoPlayer} from "@site/src/components/MediaHelpers";
+
+# Gestión de los documentos
+
+La vista de [documentos](/docs/area-operacion/documentos) permite a los usuarios gestionar los diversos documentos asociados a un expediente. Los documentos son los archivos que se deben cargar para un proceso documental específico.
+
+<ImageDiv src="/img/work/opr/documentos/table-docs.png" alt="Documentos" />
+
+## Carga de documentos
+
+Cuando un documento no ha sido cargado, se debe hacer clic en el bóton `Cargar` que se encuentra en la parte derecha del tipo de documento a subir, a continuación se abrirá un modal para [agregar documento](/docs/area-operacion/documentos#agregar-documento).
+
+<VideoPlayer src="/img/tutorial/proceso-documental/creacion-documento.mov" />
+
+Se llenan los datos del documento a subir, si es necesario se agregan atributos, en caso contrarío, se descartan los atributos. Al terminar de llenar la información del documento, se da clic en `Guardar`.
+
+## Descarga de documentos
+
+<VideoPlayer src="/img/tutorial/proceso-documental/descargas-documento.mov" />
+
+### Descarga individual
+
+Para descargar un solo documento, se puede hacer desde la vista de los documentos del expediente, haciendo clic en guardar.
+
+:::info Importante
+
+El nombre que se generá en el sistema es un UUID. Si se desea, se puede cambiar el nombre del documento.
+
+:::
+
+### Descarga `zip`
+
+Para descargar todos los documentos subidos hasta ese momento, se da clic en el botón `Descargar` que aparece en la esquina superior derecha de la vista de documentos del expediente.
+
+
+<VideoPlayer src="/img/tutorial/proceso-documental/guardar-documentos.mov" />
+
+:::info Importante
+
+Al descargar todos los documentos, se agrupan en un `.zip`, no se juntan en un solo archivo `.pdf`.
+
+:::
+
+## Eliminación de documentos
+
+Para eliminar el documento, se debe hacer clic en el botón `Eliminar`, al realizar dicha acción, se abrirá un modal que advertirá al usuario que se eliminará el documento y toda la información relacionada. Se solicitará una explicación del por qué se está tomando esta decisión. Cuando el campo se haya llenado, se debe hacer clic en `Eliminar` para proceder con la eliminación del documento.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/eliminar-documento.mov" />
+
+:::danger Importante
+
+Una vez eliminado el documento, no se podrá recuperar
+
+:::

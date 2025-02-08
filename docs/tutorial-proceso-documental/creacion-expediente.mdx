@@ -1,0 +1,49 @@
+---
+sidebar_position: 1
+---
+
+import {ImageDiv, VideoPlayer} from "@site/src/components/MediaHelpers";
+
+# Creación de expediente
+
+La vista de expedientes permite a los usuarios gestionar los diversos expedientes de la empresa. Los expedientes son los contenedores de los documentos que se deben cargar para un proceso documental específico. 
+
+A continuación se da un ejemplo de cómo crear un expediente.
+
+## Uso de filtro
+
+El [filtro](/docs/area-operacion/expedientes#filtro) es muy útil a la hora de posicionarse en el lugar deseado para la creación de expedientes. Se usa de la siguiente manera:
+
+1. Se debe hacer clic en el campo de filtro.
+2. Se debe escribir el nombre del lugar deseado.
+3. del lado derecho se mostrarán los departamentos y áreas que coincidan con la búsqueda, si el campo de filtro esta vacío, se mostrarán todos los departamentos y áreas asignados al usuario.
+4. Se debe seleccionar el lugar deseado.
+5. Se debe hacer clic en el botón de búsqueda.
+6. Se mostrarán los expedientes asociados al lugar seleccionado.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/filtro-expediente.mov" />
+
+## Creación de expediente
+
+Una vez posicionado en el lugar deseado, se debe hacer clic en el botón `Agregar`, `Nuevo` o similar que se encuentra en la parte superior derecha de la vista, a continuación se abrirá un modal en el cual se solicitarán los siguientes datos:
+
+* Tipo de archivo.
+* Descripción del expediente.
+* Identificador del expediente.
+* Agrupador del expediente.
+* Año del expediente.
+* Mes del expediente.
+
+En la sección [creación de expediente](/docs/area-operacion/expedientes#creación) se muestra cómo se realiza la creación y más detalles sobre los campos.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/creacion-expediente.mov" />
+
+Una vez creado el expediente, este estará listo para cargar los documentos necesarios según la [plantilla o estructura de expediente](/docs/area-operacion/estructura-expedientes) seleccionada.
+
+## Abrir expediente
+
+Para abrir un expediente, se debe hacer clic en el expediente deseado, a continuación se mostrará la vista de [documentos](/docs/area-operacion/documentos) asociados al expediente.
+
+<VideoPlayer src="/img/tutorial/proceso-documental/abrir-expediente.mov" />
+
+En esta vista es donde alimentamos el expediente con los documentos necesarios para el proceso documental.

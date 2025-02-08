@@ -63,7 +63,7 @@ sidebar_position: 12
 
 - [x] Creación de expediente.
 - [x] Gestión de los documentos (explicación, carga, eliminación).
-- [ ] Visualización (detalle, descarga, permisos).
+- [x] Visualización (detalle, descarga, permisos).
 
 ## Genericos 10
 

@@ -19,9 +19,9 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/organizacion"
+            to="/docs/category/tutorial-proceso-documental"
           >
-            Tutorial de Arquos Files - 25 minutos ⏱️
+            Tutorial de Arquos Files - 15 minutos ⏱️
           </Link>
         </div>
       </div>
@@ -32,10 +32,7 @@ function HomepageHeader() {
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <Layout
-      title={`Home`}
-      description="Description will go into a meta tag in <head />"
-    >
+    <Layout title={`Home`} description="Documentación del sistema Arquos Files">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -1,41 +1,102 @@
-# Website
+# Arquos Files - Documentación para el usuario
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+Bienvenido a la documentación de Arquos Files. Este proyecto fue realizado con [Docusaurus](https://docusaurus.io/), un generador de sitios web moderno.
 
-### Installation
+## Tecnologías utilizadas
 
-```
-$ yarn
-```
+* Node.js
+* NPM
+* Docusaurus
+* Nginx
 
-### Local Development
+## Instalación
 
-```
-$ yarn start
-```
+### Local
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+Clonar el repositorio.
 
-### Build
-
-```
-$ yarn build
+```bash
+git clone https://github.com/solunerus/arquos_files_docs.git
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+En la carpeta del proyecto, ejecutar el siguiente comando.
 
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```bash
+npm install
 ```
 
-Not using SSH:
+Si no hay error, ejecutar el siguiente comando.
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+npx docusaurus start
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Si hay error, revisar y corregir (posiblemente solo se necesite actualizar la versión de Node.js y NPM).
+
+Entrar a `http://localhost:3000/` y ¡listo!.
+
+### Server
+
+Se necesitará ejecutar los pasos `1`y `2` de la instalación local, después se deberá ejecutar el siguiente comando.
+
+```bash
+npm run build
+```
+
+Si hay errores, se deben revisar y corregir (posiblemente solo se necesite actualizar la versión de Node.js y NPM).
+
+Si no hay errores, se deberá realizar la siguiente configuración:
+
+* Se debe crear un archivo sin extención en la ruta `/etc/nginx/sites-available/name_file`, donde `name_file` es el nombre del archivo de la configuración, puede llamarse `arquos_files_docs` por dar un ejemplo. Para ello hacemos lo siguiente:
+
+```bash
+sudo nano /etc/nginx/sites-available/arquos_files_docs
+```
+
+En el editor de texto escribimos lo siguiente:
+
+```nginx
+server {
+    listen PORT ssl; 
+    server_name SERVER.NAME.COM;
+
+    ssl_certificate /PATH/TO/SSL/.ssl/NAME_OF_FILE.pem;
+    ssl_certificate_key /PATH/TO/SSL/.ssl/NAME_OF_FILE.key;
+
+    location / {
+        root /PATH/TO/PROJECT/arquos_files_docs/build;
+        index index.html;
+        try_files $uri /index.html;
+    }
+}
+```
+
+Donde:
+
+* **PORT**. Es el puerto asignado (el cual también se debe abrir en la configuración del sistema operativo).
+* **SERVER.NAME.COM**. Es el nombre del server, puede ser la dirección IP (no recomendado) o el nombre del dominio.
+* **/PATH/TO/SSL/.ssl/**. Es la ruta a los certificados `SSL`.
+* **NAME_OF_FILE**. Es el nombre del archivo.
+* **/PATH/TO/PROJECT/arquos_files_docs/build**. Es la ruta del proyecto, se debe ir a la carpeta `/build`.
+
+Una vez realizado esto, se debe crear un enlace simbólico para activar la configuración realizada anteriormente, para ello se ejecuta el siguiente comando:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/arquos_files_docs /etc/nginx/sites-enabled/
+```
+
+Al crear el enlace simbólico, se debe probar la configuración ejecutando el comando:
+
+```bash
+sudo nginx -t
+```
+
+Si se ve `syntax is ok`y `test is successful`, todo está bien.
+
+Ahora se necesita reiniciar Nginx, para ello se ejecuta el siguiente comando:
+
+```bash
+sudo systemctl restart nginx
+```
+
+Si todo se realizó correctamente, se debe visualizar el sitio web desde el navegador ingresando a `https://SERVER.NAME.COM:PORT/`

@@ -53,19 +53,17 @@ sidebar_position: 12
 - [x] Asignación de perfil a usuarios.
 - [x] Asignación de usuarios a perfiles.
 
-## Tutorial - Creación de expediente 8
+## Tutorial - Pasos previos al proceso documental 8
 
 - [x] Creación de Soporte documental (creación, asignación / relación).
 - [x] Creación de Atibutos de expediente (creación, asignación /relación).
 - [x] Creación de Estructura de expediente y asignación de soporte documental.
-- [ ] Creación de expediente.
-- [ ] Carga de documentos (redirección a `Tutorial - Carga de documento`).
 
-## Tutorial - Carga de documento 9
+## Tutorial - Proceso documental 9
 
-- [ ] Generación de documentos (explicación).
-- [ ] Carga de documento (subida).
-- [ ] Visualización (show).
+- [x] Creación de expediente.
+- [x] Gestión de los documentos (explicación, carga, eliminación).
+- [ ] Visualización (detalle, descarga, permisos).
 
 ## Genericos 10
 

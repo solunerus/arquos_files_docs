@@ -109,7 +109,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Soluciones Nerus. Built with Docusaurus.`,
+        copyright: `Copyright © 2024 - ${new Date().getFullYear()} Soluciones Nerus. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
